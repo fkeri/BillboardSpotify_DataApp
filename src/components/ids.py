@@ -1,0 +1,12 @@
+DISTRIBUTIONS_1D_RADIO = "distributions-1d-radio"
+DISTRIBUTIONS_1D_INFO = "distributions-1d-info"
+DISTRIBUTIONS_1D_DATE_RANGE = "distributions-1d-date-range"
+DISTRIBUTIONS_1D_PLOT = "distributions-1d-plot"
+DISTRIBUTIONS_1D_DATA_GRANULARITY = "distributions-1d-data-granularity"
+DISTRIBUTIONS_1D_HISTOGRAM = "distributions-1d-histogram"
+
+DENSITY_HEATMAP_RADIO_1 = "density-heatmap-radio-1"
+DENSITY_HEATMAP_RADIO_2 = "density-heatmap-radio-2"
+DENSITY_HEATMAP_RADIO_1_INFO = "density-heatmap-radio-1-info"
+DENSITY_HEATMAP_RADIO_2_INFO = "density-heatmap-radio-2-info"
+DENSITY_HEATMAP_PLOT = "density-heatmap-plot"

@@ -1,0 +1,122 @@
+hr {
+    border-top: 2px solid gray;
+}
+
+.dropdown-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.dropdown-button {
+    width: 100%;
+    margin-top: 5px;
+}
+
+.tabs-group {
+    padding-top: 20px;
+}
+
+.app-div {
+    padding: 10px;
+}
+
+.data-table-div {
+    margin: auto;
+    padding: 10px;
+}
+
+.budget-label {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.budget-text {
+    font-size: 20px;
+}
+
+.budget-text-value {
+    font-size: 20px;
+    font-style: italic;
+}
+
+.budget-progress-bar {
+    height: 20px;
+}
+
+.budget-tooltip {
+    font-size: 18px;
+}
+
+.checklist {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+@media(max-width: 800px) {
+    .dropdown-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.radio-group .form-check {
+    padding-left: 0;
+}
+
+.btn-group,
+.btn-group-vertical {
+    flex-wrap: wrap;
+}
+
+.radio-btn-info-group {
+    display: inline-flex;
+    flex-direction: column;
+}
+
+#spotify-audio-features-info {
+    position: relative;
+}
+
+.radio-group .btn-group>.form-check:not(:last-child)>.btn {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.radio-group .btn-group>.form-check:not(:first-child)>.btn {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    margin-left: -1px;
+}
+
+.bg-plotly-dark {
+    background-color: rgb(17, 17, 17);
+}
+
+.bg-custom-light-gray {
+    background-color: rgb(237, 237, 237);
+}
+
+.border-custom-light-gray {
+    --bs-border-opacity: 1;
+    border-color: rgb(237, 237, 237) !important;
+}
+
+#spotify-audio-features-date-range .rc-slider-track {
+    background-color: rgb(210, 235, 245);
+}
+
+.updatemenu-item-rect {
+    fill: rgb(31, 155, 207) !important;
+    text-align: center !important;
+    justify-content: center !important;
+    font-size: .875rem !important;
+    text-transform: uppercase !important;
+    --bs-text-opacity: 1 !important;
+    color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important;
+    padding: 1rem 0.5rem !important;
+}
+
+.text-justify {
+    text-align: justify !important;
+}
