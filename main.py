@@ -23,6 +23,7 @@ def load_billboard_hot_100_data(filepath_1, filepath_2):
 
 def main() -> None:
     app = Dash(external_stylesheets=[LUX])
+    server = app.server
 
     # Load the data
     data = pd.read_json(BILLBOARD_SPOTIFY_FILEPATH)
