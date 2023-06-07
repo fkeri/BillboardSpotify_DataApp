@@ -68,7 +68,7 @@ pytz==2022.7.1
 PyYAML==6.0
 pyzmq==25.0.2
 requests>=0.1.0
-ridgeplot>=0.8.0
+ridgeplot>=0.1.2
 scipy==1.10.1
 six==1.16.0
 stack-data==0.6.2
