@@ -8,6 +8,7 @@ from ridgeplot import ridgeplot
 import plotly.figure_factory as ff
 from plotly.subplots import make_subplots
 import numpy as np
+import math
 
 from . import ids
 

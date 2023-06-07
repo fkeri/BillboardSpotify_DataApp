@@ -7,10 +7,6 @@ import pandas as pd
 
 from . import ids
 
-ANIMATION_FRAMES_PATH = "C:\\Users\\fkeri\\portfolio-projects\\BillboardTop100\\src\\data\\billboardAnimationFramesDecade.json"
-BILLBOARD_HISTORICAL_TOP100_PATH = "C:\\Users\\fkeri\\portfolio-projects\\BillboardTop100\\data\\external\\1960-2022_yearData.json"
-YEAR_START = 1960
-YEAR_END = 2022
 WINDOW_STEP = 52  # window step is 52 weeks
 
 
@@ -139,7 +135,7 @@ def get_billboard_density_heatmap(
                             transition=dict(duration=0),
                         ),
                     ],
-                    label=f"{unique_dates[i].split('-')[0]}",
+                    label=f"{str(unique_dates[i]).split('-')[0]}",
                 )
                 for i in range(0, n_frames + 1, WINDOW_STEP)
             ],
