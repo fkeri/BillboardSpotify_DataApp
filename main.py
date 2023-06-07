@@ -6,9 +6,8 @@ import data_utils
 
 import pandas as pd
 
-BILLBOARD_SPOTIFY_FILEPATH = "C:/Users/fkeri/portfolio-projects/BillboardTop100Visualization/data/processed/billboardYearlySpotifyTracksAudioFeatures.json"
-ANIMATION_FRAMES_PATH = "C:\\Users\\fkeri\\portfolio-projects\\BillboardTop100\\src\\data\\billboardAnimationFramesDecade.json"
-BILLBOARD_HISTORICAL_TOP100_PATH = "C:\\Users\\fkeri\\portfolio-projects\\BillboardTop100\\data\\external\\1960-2022_yearData.json"
+BILLBOARD_SPOTIFY_FILEPATH = "data\\processed\\billboardYearlySpotifyTracksAudioFeatures.json"
+ANIMATION_FRAMES_PATH = "data\\processed\\billboardAnimationFramesDecade.json"
 BILLBOARD_HISTORICAL_1960_1990_PATH = "data\\external\\1960-1990_yearData.json"
 BILLBOARD_HISTORICAL_1991_2022_PATH = "data\\external\\1991-2022_yearData.json"
 YEAR_START = 1960
