@@ -13,9 +13,6 @@ external_dir = "data/external"
 BILLBOARD_SPOTIFY_FILEPATH = os.path.join(
     processed_dir, "billboardYearlySpotifyTracksAudioFeatures.json"
 )
-ANIMATION_FRAMES_PATH = os.path.join(
-    processed_dir, "billboardAnimationFramesDecade.json"
-)
 BILLBOARD_HISTORICAL_1960_1990_PATH = os.path.join(
     external_dir, "1960-1990_yearData.json"
 )
@@ -49,17 +46,9 @@ data_billboard_charts = load_billboard_hot_100_data(
     BILLBOARD_HISTORICAL_1960_1990_PATH, BILLBOARD_HISTORICAL_1991_2022_PATH
 )
 
-# Load animation frames for animated contour plots
-with open(ANIMATION_FRAMES_PATH, "r") as json_file:
-    json_data = json.load(json_file)
-data_animation = pd.DataFrame(json_data)
-data_animation["duration_ms"] /= 1000 * 60
-data_animation.rename(columns={"duration_ms": "duration_min"}, inplace=True)
-
 app.title = "Popular Tracks' Audio Feature Exploration:"
 app.subtitle = "Interactive Data App"
 app.card_1 = "Distributions of Audio Features Over Time"
-app.card_2 = "Joint Distributions of Audio Features Over Time"
 
-app.layout = create_layout(app, data, data_billboard_charts, data_animation)
+app.layout = create_layout(app, data, data_billboard_charts)
 app.run_server(debug=False)
