@@ -51,4 +51,5 @@ app.subtitle = "Interactive Data App"
 app.card_1 = "Distributions of Audio Features Over Time"
 
 app.layout = create_layout(app, data, data_billboard_charts)
-app.run_server(debug=False)
+port = int(os.environ.get('PORT', 5000))
+app.run_server(host='0.0.0.0', port=port)
