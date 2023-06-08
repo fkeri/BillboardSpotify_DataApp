@@ -5,13 +5,23 @@ from src.components.layout import create_layout
 
 import pandas as pd
 import json
+import os
 
-BILLBOARD_SPOTIFY_FILEPATH = (
-    "data\\processed\\billboardYearlySpotifyTracksAudioFeatures.json"
+processed_dir = "data/processed"
+external_dir = "data/external"
+
+BILLBOARD_SPOTIFY_FILEPATH = os.path.join(
+    processed_dir, "billboardYearlySpotifyTracksAudioFeatures.json"
 )
-ANIMATION_FRAMES_PATH = "data\\processed\\billboardAnimationFramesDecade.json"
-BILLBOARD_HISTORICAL_1960_1990_PATH = "data\\external\\1960-1990_yearData.json"
-BILLBOARD_HISTORICAL_1991_2022_PATH = "data\\external\\1991-2022_yearData.json"
+ANIMATION_FRAMES_PATH = os.path.join(
+    processed_dir, "billboardAnimationFramesDecade.json"
+)
+BILLBOARD_HISTORICAL_1960_1990_PATH = os.path.join(
+    external_dir, "1960-1990_yearData.json"
+)
+BILLBOARD_HISTORICAL_1991_2022_PATH = os.path.join(
+    external_dir, "1991-2022_yearData.json"
+)
 YEAR_START = 1960
 YEAR_END = 2022
 
