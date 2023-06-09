@@ -33,7 +33,7 @@ def load_billboard_hot_100_data(filepath_1, filepath_2):
     return pd.concat([file_1, file_2]).reset_index(drop=True)
 
 
-app = Dash(external_stylesheets=[LUX, os.path.join('assets', 'style.css')])
+app = Dash(__name__, external_stylesheets=[LUX, os.path.join('assets', 'style.css')])
 server = app.server
 
 # Load Billboard-Spotify Data
