@@ -33,7 +33,7 @@ def load_billboard_hot_100_data(filepath_1, filepath_2):
     return pd.concat([file_1, file_2]).reset_index(drop=True)
 
 
-app = Dash(__name__, external_stylesheets=[LUX, os.path.join('assets', 'style.css')])
+app = Dash(__name__, external_stylesheets=[LUX, os.path.join("assets", "style.css")])
 server = app.server
 
 # Load Billboard-Spotify Data
@@ -41,15 +41,10 @@ with open(BILLBOARD_SPOTIFY_FILEPATH, "r") as json_file:
     json_data = json.load(json_file)
 data = pd.DataFrame(json_data)
 
-# Load weekly raw Billboard Chart Data
-data_billboard_charts = load_billboard_hot_100_data(
-    BILLBOARD_HISTORICAL_1960_1990_PATH, BILLBOARD_HISTORICAL_1991_2022_PATH
-)
-
 app.title = "Popular Tracks' Audio Feature Exploration:"
 app.subtitle = "Interactive Data App"
 app.card_1 = "Distributions of Audio Features Over Time"
 
-app.layout = create_layout(app, data, data_billboard_charts)
-port = int(os.environ.get('PORT', 5000))
-app.run_server(host='0.0.0.0', port=port)
+app.layout = create_layout(app, data)
+port = int(os.environ.get("PORT", 5000))
+app.run_server(host="0.0.0.0", port=port)

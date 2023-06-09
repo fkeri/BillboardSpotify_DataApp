@@ -7,16 +7,12 @@ from . import (
     distributions_1d_date_range,
     distributions_1d_plot,
     distributions_1d_data_granularity,
-    density_heatmap_text,
-    density_heatmap_radio,
-    density_heatmap_plot,
 )
 
 
 def create_layout(
     app: Dash,
     data: pd.DataFrame,
-    data_billboard_charts: pd.DataFrame,
 ) -> html.Div:
     return html.Div(
         className="app-div bg-light",
